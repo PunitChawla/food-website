@@ -1,0 +1,240 @@
+/* Css resat */
+
+
+html{
+    scroll-behavior: smooth;
+}
+*{
+    margin: 0;
+    padding: 0;
+}
+
+/* css variable */
+:root{
+    --navbaar-height:59px;
+}
+
+/* Navigation baar */
+
+#navbar{
+    display: flex;
+    align-items: center;
+    position: sticky;
+    top: 0px;
+    
+}
+
+/* Navigation baar : logo and img  */
+#logo{
+margin: 10px 34px;
+}
+#logo img{
+    height: 60px;
+    margin: 3px 6px;
+    border-radius: 41px;
+}
+/*Navigation baar :  list styleing  */
+
+
+#navbar ul{
+    display: flex;
+}
+#navbar::before{
+    content: " ";
+    background-color: black;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.4;
+
+}
+
+
+
+#navbar ul  li{
+    
+    list-style: none;
+    font-size: 1.3rem;
+}
+#navbar ul  li a {
+    display: block;
+    padding: 3px 22px;
+    border-radius: 20px;
+    text-decoration: none;
+    color: white;
+}
+#navbar ul li a:hover{
+    background-color: white;
+    color: black;
+}
+
+
+
+
+/* HOme section  */
+
+#home{
+    display: flex;
+    height: 530px;
+    flex-direction: column;
+    padding: 3px 200px;
+    justify-content: center;
+    align-items: center;
+}
+#home::before{
+    content: " ";
+    background: url('./background2.jpg') no-repeat no-repeat center/cover;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    height: 630px;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.8;
+
+}
+
+#home h1{
+    color: white;
+    text-align: center;
+
+}
+#home p{
+    color: white;
+    font-size: 1.5rem;
+    text-align: center;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif
+    
+}
+
+
+/* services section  */
+#services{
+    margin: 34px;
+    display: flex;
+}
+.box{
+    border: 2px solid brown;
+    padding: 34px;
+    margin: 3px 6px ;
+    border-radius: 23px;
+    background-color: rgb(214, 210, 210);
+    
+
+}
+.box img{
+    height: 160px;
+    display: block;
+    margin: auto;
+    border-radius: 23px;
+}
+.box p{
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+
+/* client section  */
+
+#client-section{
+    height: 400px;
+    /* position: relative; */
+}
+#client-section::before{
+    content: " ";
+    position: absolute;
+    
+    background: url(/pexels-trang-doan-1099680.jpg);
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    opacity: 0.6;
+    height: 54%;
+}
+
+#clients{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#clients img{
+    height:125px;
+    
+}
+.client-item{
+    padding: 21px;
+}
+
+
+/* contect section  */
+#contact{
+position: relative;
+}
+
+#contact::before{
+    content: " ";
+    position:absolute;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    opacity: 0.9;
+    background: url('./contact.jpg.jpg') no-repeat center center/cover ; 
+    
+}
+#contact-box{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    padding-bottom: 34px;
+
+}
+#contact-box form{
+    width: 40%;
+
+}
+#contact-box label{
+    font-size: 1.3rem;
+}
+
+
+#contact-box input,
+#contact-box textarea{
+    width: 100%;
+    padding: 0.5rem;
+    border-radius: 10px;
+    font-size: 1.1rem;
+    
+}
+footer{
+    background-color: black;
+    color: white;
+    padding: 9px ;
+}
+
+/* Utility Classes*/
+
+.btn{
+    padding: 6px 20px;
+    border: 2px solid white;
+    background-color: darksalmon;
+    margin: 17px ;
+    font-size: 1.5rem;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.h-primary{
+    font-size: 3.8rem;
+    padding: 12px;
+}
+.h-secondary{
+    font-size: 2.8rem;
+    padding: 12px;
+}
+.center{
+    text-align: center;
+}
+
+
